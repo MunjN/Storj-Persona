@@ -32,7 +32,7 @@
 
       // Main logic for embedding the dashboard
       let embedToken = null;
-      const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=87848d33-af2e-4131-89e5-a2919587cbcc&groupId=d372f749-0542-4763-8a13-bd59803200e6&w=2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUNBTkFEQS1DRU5UUkFMLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0IiwiZW1iZWRGZWF0dXJlcyI6eyJ1c2FnZU1ldHJpY3NWTmV4dCI6dHJ1ZX19";
+      const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=bfb7b0a7-cfa8-47b1-b3ef-8e982a616ff1&groupId=d372f749-0542-4763-8a13-bd59803200e6&w=2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUNBTkFEQS1DRU5UUkFMLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0IiwiZW1iZWRGZWF0dXJlcyI6eyJ1c2FnZU1ldHJpY3NWTmV4dCI6dHJ1ZX19";
       async function fetchAuthToken() {
         const response = await fetch(`${backendUrl}/auth-token`, {
           method: 'POST',
@@ -63,7 +63,7 @@
           tokenType: models.TokenType.Embed,
           accessToken: embedToken,
           embedUrl: embedUrl,
-          id: "87848d33-af2e-4131-89e5-a2919587cbcc",
+          id: "bfb7b0a7-cfa8-47b1-b3ef-8e982a616ff1",
           permissions: models.Permissions.All,
           settings: {
             filterPaneEnabled: false,

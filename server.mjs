@@ -51,7 +51,7 @@ app.post('/auth-token', async (req, res) => {
 // Endpoint to fetch Embed Token
 app.post('/embed-token', async (req, res) => {
   const groupId = "d372f749-0542-4763-8a13-bd59803200e6";
-  const reportId = "87848d33-af2e-4131-89e5-a2919587cbcc";
+  const reportId = "bfb7b0a7-cfa8-47b1-b3ef-8e982a616ff1";
   const powerBIUrl = `https://api.powerbi.com/v1.0/myorg/groups/${groupId}/reports/${reportId}/GenerateToken`;
 
   // Auth token is sent from the frontend
